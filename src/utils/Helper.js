@@ -1,11 +1,11 @@
 export const menu = [
-    { name: "Dashboard", icon: "dashbord"  },
-    { name: "Attack Path Map", icon: "attack" },
-    { name: "Compliance View", icon: "compliance" },
-    { name: "Alerts", icon: "alert"  },
-    { name: "Remediation", icon: "reme" },
-    { name: "Settings", icon: "setting"},
-    { name: "Logout", icon: "logout" },
+    { name: "Dashboard", icon: "dashbord" , path: "/dashboard" },
+    { name: "Attack Path Map", icon: "attack", path: "/attack-path-map" },
+    { name: "Compliance View", icon: "compliance", path: "/compliance" },
+    { name: "Alerts", icon: "alert", path: "/alert"  },
+    { name: "Remediation", icon: "reme" , path: "/" },
+    { name: "Settings", icon: "setting" , path: "/settings"},
+    { name: "Logout", icon: "logout" , path: "/logout"},
   ];
 
 export const remediationData = [

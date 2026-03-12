@@ -17,15 +17,15 @@ const Table = ({ filters, search }) => {
   });
 
   return (
-    <div className="w-full bg-white ml-6 rounded-2xl p-4 sm:p-6">
+    <div className="w-full h-full bg-white  ml-6 rounded-2xl p-4 sm:p-6">
 
       <h2 className="text-[18px] font-semibold text-[#101828] mb-4">
         Remediation Actions
       </h2>
 
-      <div className="overflow-x-auto">
+      <div className=" overflow-auto max-w-300 max-h-165 h-full">
 
-        <table className="min-w-[1000px] w-full border-separate border-spacing-y-3">
+        <table className=" min-w-max min-h-max w-full h-full border-separate border-spacing-y-3">
 
           <thead>
             <tr className="text-[#8E97A6] text-[13px] text-left">
@@ -49,7 +49,7 @@ const Table = ({ filters, search }) => {
               </tr>
             ) : (
               filteredData.map((row, index) => (
-                <tr key={index} className="bg-[#F9FBFF] border border-[#E5E7EB]">
+                <tr key={index} className={` border border-[#E5E7EB]  ${row.isLight ? "bg-[#F9FBFF]" : "bg-white" } `}>
 
                   <td className="px-4 py-4 font-semibold text-[#445164]">
                     {row.action}

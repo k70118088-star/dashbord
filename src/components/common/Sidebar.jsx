@@ -1,6 +1,7 @@
 import React from "react";
 import { menu } from "../../utils/Helper";
 import Icons from "./Icons";
+import { Link } from "react-router-dom";
 
 
 const Sidebar = () => {
@@ -22,18 +23,19 @@ const Sidebar = () => {
 
         <div className="space-y-3">
           {menu.map((item, index) => (
-            <div
+            <Link
+              to={item.path}
               key={index}
               className="flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer transition"> 
               <span className="text-lg"><Icons icon={item.icon}/></span>
               <span className="text-sm font-medium leading-[100%]">{item.name}</span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
 
       <div className="text-xs text-gray-300 flex items-center gap-1">
-        <span className="text-lg font-bold">S</span>
+        <span className="text-lg font-bold"><Icons icon={"powered"}/></span>
         Powered by Cyber Security Speed
       </div>
     </div>

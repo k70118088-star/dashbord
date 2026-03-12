@@ -8,11 +8,9 @@ const Hero = ({search} ) => {
  const [filters, setFilters] = useState({});
 
   return (
-    <div className=' overflow-auto w-full'>
+    <div>
      <Header setFilters={setFilters} />
-     <div className='overflow-auto'>
      <Table  filters={filters} search={search}/>
-     </div>
     </div>
   )
 }
