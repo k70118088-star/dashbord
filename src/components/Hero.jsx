@@ -8,9 +8,11 @@ const Hero = ({search} ) => {
  const [filters, setFilters] = useState({});
 
   return (
-    <div>
+    <div className='overflow w-full h-full'>
      <Header setFilters={setFilters} />
+     <div className=''>
      <Table  filters={filters} search={search}/>
+    </div>
     </div>
   )
 }

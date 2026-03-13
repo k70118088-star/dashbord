@@ -15,7 +15,7 @@ const Remediation = () => {
   return (
     <div className="flex h-screen overflow-hidden  p-6 bg-[#F3F6FC] ">
       <Sidebar />
-      <div className="flex flex-col">
+      <div className="flex flex-col flex-1 w-full ">
        <Navbar  setSearch={setSearch} />
       <Routes>
           <Route path="/" element={<Hero search={search} />} />
